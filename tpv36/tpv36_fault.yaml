@@ -1,0 +1,38 @@
+!Switch
+[Tnuc_d,Tnuc_s,Tnuc_n,T_s]: !ConstantMap
+  map:
+    Tnuc_d: 0.0
+    Tnuc_s: 0.0
+    Tnuc_n: 0.0
+    T_s:   0.0
+[T_n,T_d]: !LuaMap
+  returns: [T_n,T_d]
+  function: |
+      function f (x)
+        w=math.abs(x["z"]/math.sin(15/180.0*math.pi))
+        return {
+          T_n=-4240.0*w,
+          T_d=-2120.0*w
+        }
+      end
+[mu_s, mu_d,d_c]: !ConstantMap
+  map:
+     mu_s:        0.575
+     mu_d:        0.450
+     d_c:         0.18
+[forced_rupture_time]: !Include rupture_time.yaml
+[cohesion]: !LuaMap
+  returns: [cohesion]
+  function: |
+      function f (x)
+        ww=math.abs(x["z"]/math.sin(15/180.0*math.pi))
+        if (ww<=8000.0)then
+          cohesion=-500.0*(8000.0-ww)
+        else
+          cohesion=0.0
+        end
+        return {
+          cohesion=cohesion
+        }
+      end
+
