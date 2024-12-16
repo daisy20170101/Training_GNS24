@@ -11,7 +11,7 @@ The Docker container contains an interactive learning environment (Jupyter) whic
 Please install [Docker](https://docs.docker.com/engine/install/), launch the Docker Desktop and then run
 
 ```bash
-docker pull :latest
+docker pull daisy20170101/seissol-training1:latest
 ```
 
 ## Training
