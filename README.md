@@ -20,7 +20,7 @@ After installation, run
 ```bash
 docker run -p 53155:53155 daisy20170101/seissol-training1:latest
 ```
-or run the [start.sh](start.sh) script.
+or run the [start_gns24.sh](start_gns24.sh) script.
 
 After some time you should see
 ```bash
@@ -37,7 +37,7 @@ To this end, you need to mount your local drive within the Docker container with
 ```bash
 docker run -v $(pwd):/shared/ -u $(id -u):$(id -g) daisy20170101/seissol-training1  <some command>
 ```
-As this command is rather long, we provide the wrapper script [tool.sh](tool.sh).
+As this command is rather long, we provide the wrapper script [tool_gns24.sh](tool_gns24.sh).
 
 The following tools are currently included:
 - PUMGen (mesh generation for SeisSol, https://github.com/SeisSol/PUMGen, see also SeisSol's documentation https://seissol.readthedocs.io/en/latest/meshing-with-pumgen.html)
@@ -48,8 +48,8 @@ The following tools are currently included:
 
 I.e.
 ```
-./tool.sh pumgen <args>
-./tool.sh gmsh <args>
-./tool.sh rconv <args>
-./tool.sh seissol <args>
+./tool_gns24.sh pumgen <args>
+./tool_gns24.sh gmsh <args>
+./tool_gns24.sh rconv <args>
+./tool_gns24.sh seissol <args>
 ```
