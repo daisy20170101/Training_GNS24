@@ -6,6 +6,8 @@ Please clone this repository with git (using the command line) or download it di
 This repository contains a Dockerfile to build a Docker container.
 The Docker container contains an interactive learning environment (Jupyter) which includes meshing tools, SeisSol, and visualiation tools.
 
+![image](fig-SSE-slab-topo2.jpeg)
+
 ## Installation
 
 Please install [Docker](https://docs.docker.com/engine/install/), launch the Docker Desktop and then run
