@@ -30,7 +30,7 @@ http://127.0.0.1:53155/lab?token=some5cryptic8hash123
 ```
 Click on that link or enter the link in the address bar of your favourite web browser.
 
-Then use the navigation bar to open the exercises (e.g., [trainning1.ipynb](training1.ipynb)).
+Then use the navigation bar to open the exercises (e.g., [training1.ipynb](training1.ipynb)).
 
 ## Tools
 
