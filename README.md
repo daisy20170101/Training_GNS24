@@ -14,11 +14,11 @@ More dynamic rupture simulation examples and details [SeisSol/Training](https://
 
 Please install [Docker](https://docs.docker.com/engine/install/), launch the Docker Desktop and then run
 
-if on MacOS M1/M2/M3/M4, try:
+if on MacOS M1/M2/M3/M4 CPU, try:
 ```bash
 docker pull daisy20170101/seissol-training1:latest
 ```
-or on Win/Linux, try:
+or on Win/Linux or all Intel/AMD machines, try:
 
 ```bash
 docker pull daisy20170101/seissol-training1:ubuntu-22-05
