@@ -30,7 +30,14 @@ After installation, run
 ```bash
 docker run -p 53155:53155 daisy20170101/seissol-training1:latest
 ```
-or run the [start_gns24.sh](start_gns24.sh) script.
+or 
+
+```bash
+docker run -p 53155:53155 daisy20170101/seissol-training1:ubuntu-22-05
+```
+depending on your system.
+
+Alternatively, you can run the [start_gns24.sh](start_gns24.sh) script.
 
 After some time you should see
 ```bash
